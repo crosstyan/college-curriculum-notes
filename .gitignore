@@ -1,4 +1,4 @@
 # All files in the directory
-./source/*
+source/*.*
 # except tex and bib
-./source/*.tex
+!source/*.tex
