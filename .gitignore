@@ -1,0 +1,4 @@
+# All files in the directory
+./source/*
+# except tex and bib
+./source/*.tex
