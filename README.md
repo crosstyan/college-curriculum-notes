@@ -1,7 +1,12 @@
 # 个人用课程笔记
 (还有其他杂七杂八的玩意)
-Github仅存放源文件. 说不定之后会把编译好的PDF一并上传. 
+
+有空会将编译好的PDF丢到Release. 
+
 包含有个人用的模板和Tikz的一些示例代码. 
+## 使用说明
+使用[TeX Live](https://www.tug.org/texlive/)套件下写作. 
+
 使用Xelatex和Biber进行编译. 
 
 ## 包含课程
