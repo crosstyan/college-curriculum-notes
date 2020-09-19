@@ -2,3 +2,4 @@
 source/*.*
 # except tex and bib
 !source/*.tex
+resources/figure/py/
