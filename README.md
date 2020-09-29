@@ -20,4 +20,4 @@
 - [ ] 信息论
 - [ ] 数据结构
 ## LICENSE
-tex源文件遵循WTFPL. 在Resources中的媒体文件由互联网搜刮而来, 不遵循许可证限制. 
+tex源文件遵循WTFPL.
