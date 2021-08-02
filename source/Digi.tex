@@ -14,6 +14,9 @@
 \usepackage{amsmath}
 \usepackage{ulem}
 \usepackage{amsfonts}
+\usepackage{enumitem}
+\setlist[1]{itemsep=-5pt}
+\usepackage{subcaption}
 
 \usepackage{tikz}
 \usetikzlibrary{calc}
@@ -40,9 +43,9 @@
 % 段首不缩进
 \setlength{\parindent}{0pt}
 %%%% 下面的命令设置行间距与段落间距 %%%%
-\linespread{1.4}
+\linespread{1.2}
 % \setlength{\parskip}{1ex}
-\setlength{\parskip}{0.5\baselineskip}
+\setlength{\parskip}{.5\baselineskip}
 
 \def\rlwd{.5pt} \def\rlht{2.2ex} \def\rldp{.5ex}
 \def\mydiv#1{~%
@@ -56,7 +59,6 @@
 \date{Augest 2020}
 \begin{document}
   \chapter{Basic}
-  \section{N-base}
   \section{N-base to Decimal}
   $$\text{Decimal}=\sum_{i=-m}^{n-1} k_i\cdot N^i $$
   N为相应进制的base, $ k_i$为i-th的系数. 整数部分有n位, 小数部分有m位. 
@@ -350,10 +352,12 @@ $$(A+B)^\prime=A^\prime\cdot B^\prime$$
 右边取1的组合写下来做SOP即可. 
 \section{逻辑表达式化为标准形式}
 \subsection{最小项}
-即SOP\\
+即SOP
+\par
 写K-map, (四变量时左边为前俩, 上边为后俩), (三变量时左边为第一, 上边为后俩).
 (标最小项时还是一行一行过去的)
-然后按照二进制顺序排列即可得到最小项. \\
+然后按照二进制顺序排列即可得到最小项. 
+\par
 \sout{说白了最小项就是按照二进制顺序排列.} 更准确地说, 最小项就是把二进制转换成对应的十进制. 
 \paragraph{例子} $AB'CD'EF$按照原变量为1, 反变量为0可以得到$(101011)_B$转换为十进制数为$(43)_D$则其编号就是$43$. $AB'CD'EF$有6个变量, 即一共有$2^6=64$项
 \subsection{最大项}
@@ -415,9 +419,10 @@ P相串T相并为NOR
 \includegraphics[width=0.33\textwidth]{cmos_tri_condition.png}
 \caption{三态门}
 \end{figure}
-其有三种状态: 高电平, 低电平, 高阻态\par
-就一非门, 只不过多了一个高阻态. \par
-当$EN^\prime=0$时为正常非门(低电平有效, 有效就是作为非门正常工作)\par
+其有三种状态: 高电平, 低电平, 高阻态\\
+就一非门, 只不过多了一个高阻态. 
+\par
+当$EN^\prime=0$时为正常非门(低电平有效, 有效就是作为非门正常工作)\\
 $EN^\prime=1$为高阻态.
 \section{噪声容限}
 \begin{align*}

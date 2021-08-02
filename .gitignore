@@ -2,4 +2,8 @@
 source/*.*
 # except tex and bib
 !source/*.tex
+.vscode
 resources/figure/py/
+source/py.tex
+_minted*
+_markdown*
